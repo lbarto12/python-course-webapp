@@ -123,14 +123,14 @@
 			<Button onClick={async () => await paginate(1)}>{'>'}</Button>
 		</Card>
 	</Card>
-	<Card style="flex-direction: column">
+	<Card style="flex-wrap: wrap; align-items: start; align-content: start;">
 		<CodeMirror
 			lang={python()}
 			theme={oneDark}
 			bind:value
 			styles={{
 				'&': {
-					minHeight: '400px',
+					minHeight: '450px',
 					height: 'fit-content',
 					width: '50vw'
 				}
@@ -156,5 +156,6 @@
 	.page {
 		display: flex;
 		padding: 20px;
+		min-height: 90vh;
 	}
 </style>

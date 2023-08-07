@@ -1,6 +1,5 @@
 <!-- Script -->
 <script lang="ts">
-	import Button from '$lib/component/Button/Button.svelte';
 	import Card from '$lib/component/Card/Card.svelte';
 	import CircularProgress from '$lib/component/CircularProgress/CircularProgress.svelte';
 	import Problem from '$lib/component/Problem/Problem.svelte';

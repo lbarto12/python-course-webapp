@@ -23,6 +23,26 @@
                     "initial": "a = 5\nb = 10\n\n",
                     "expected": "15\n5\n10",
                     "completed": false
+                },
+                {
+                    "description": "",
+                    "completed": false,
+                    "expected": ""
+                },
+                {
+                    "description": "",
+                    "completed": false,
+                    "expected": ""
+                },
+                {
+                    "description": "",
+                    "completed": false,
+                    "expected": ""
+                },
+                {
+                    "description": "",
+                    "completed": false,
+                    "expected": ""
                 }
             ]
         }
