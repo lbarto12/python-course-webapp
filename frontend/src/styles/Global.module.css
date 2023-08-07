@@ -1,0 +1,12 @@
+
+
+.section {
+    padding: 50px 0;
+    text-align: center;
+    background: #4e4e4e;
+    margin: 0 0 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    position: relative;
+    z-index: 1;
+}

@@ -1,0 +1,30 @@
+{
+    "user": {
+        "name": "Liam"
+    },
+    "stats": {
+        "total": 100,
+        "completed": 27
+    },
+    "units": {
+        "Python Built-in Functions": {
+            "id": 1,
+            "completed": false,
+            "difficulty": "Easy",
+            "nums_completed": 0,
+            "pages": [
+                {
+                    "description": "<p>Python has many useful built-in functions that we use to run and debug our code. </p><p>The most basic of these is the print directive, try printing \"Hello World\" by running:</p><code>print(\"Hello World\")</code><p>python also has some useful functions for capturing user data, such as input, but we can't use it here because the code is run on a server :(. However, the syntax looks like this:</p><code>response = input(\"what is your favourite color\")</code>",
+                    "completed": false,
+                    "expected": "Hello World"
+                },
+                {
+                    "description": "<p>There are also some useful functions for numbers, such as sum, max, and min</p><p>sum only works on lists and other iterable structures, but min and max work on any number of parameters</p><p>Given the numbers stored in a and b, print the sum, min and max of the two numbers with:</p><code>print(sum([a, b]))\nprint(min(a, b))\nprint(max(a, b))</code>",
+                    "initial": "a = 5\nb = 10\n\n",
+                    "expected": "15\n5\n10",
+                    "completed": false
+                }
+            ]
+        }
+    }
+}

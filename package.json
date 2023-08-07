@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "dev": "start cmd.exe @cmd /k \"cd backend & python -m src.main\" && cd frontend && npm run dev"
+    }
+}
