@@ -141,6 +141,13 @@
                     "completed": false
                 },
                 {
+                    "title": "Operator Priority",
+                    "description": "",
+                    "initial": "\nprint(2 + 3 * 4)\n",
+                    "expected": "20",
+                    "completed": false
+                },
+                {
                     "title": "Skill Assessment",
                     "description": "",
                     "initial": "a = 25",
@@ -213,6 +220,225 @@
                         {
                             "input": "100, 200",
                             "output": "-100"
+                        }
+                    ],
+                    "completed": false
+                }
+            ]
+        },
+        "If, Elif and Else": {
+            "id": 6,
+            "completed": false,
+            "difficulty": "Easy",
+            "nums_completed": 0,
+            "pages": [
+                {
+                    "title": "Booleans in Depth",
+                    "description": "",
+                    "initial": "# a: int\n# b: int\na, b = $testcase\n\n",
+                    "expected": [
+                        {
+                            "input": "10, 15",
+                            "output": "False"
+                        },
+                        {
+                            "input": "10, 10",
+                            "output": "True"
+                        },
+                        {
+                            "input": "-1, 1",
+                            "output": "False"
+                        }
+                    ],
+                    "completed": false
+                },
+                {
+                    "title": "Booleans as Variables",
+                    "description": "",
+                    "initial": "# a: int\n# b: int\na, b = 10, 20\n\n",
+                    "expected": "True",
+                    "completed": false
+                },
+                {
+                    "title": "If Statements",
+                    "description": "",
+                    "initial": "# a: int\n# b: int\na, b = $testcase\n\n",
+                    "expected": [
+                        {
+                            "input": "10, 15",
+                            "output": ""
+                        },
+                        {
+                            "input": "11, 10",
+                            "output": "A is greater"
+                        },
+                        {
+                            "input": "1, 1",
+                            "output": ""
+                        }
+                    ],
+                    "completed": false
+                },
+                {
+                    "title": "Else Statements",
+                    "description": "",
+                    "initial": "# a: int\n# b: int\na, b = $testcase\n\nif a > b:\n    print('A is greater')\n",
+                    "expected": [
+                        {
+                            "input": "10, 15",
+                            "output": "A is not greater"
+                        },
+                        {
+                            "input": "11, 10",
+                            "output": "A is greater"
+                        },
+                        {
+                            "input": "1, 1",
+                            "output": "A is not greater"
+                        }
+                    ],
+                    "completed": false
+                },
+                {
+                    "title": "Elif Statements",
+                    "description": "",
+                    "initial": "# a: int\n# b: int\na, b = $testcase\n\nif a > b:\n\tprint('More')\nelif a < b:\n\tprint('Less')",
+                    "expected": [
+                        {
+                            "input": "10, 15",
+                            "output": "Less"
+                        },
+                        {
+                            "input": "11, 10",
+                            "output": "More"
+                        },
+                        {
+                            "input": "1, 1",
+                            "output": "Equal"
+                        }
+                    ],
+                    "completed": false
+                },
+                {
+                    "title": "Mid-Unit Assessment",
+                    "description": "",
+                    "initial": "# age: int\n# required_age: int\nage, required_age = $testcase\n\n",
+                    "expected": [
+                        {
+                            "input": "10, 15",
+                            "output": "You may not ride"
+                        },
+                        {
+                            "input": "11, 10",
+                            "output": "You may ride"
+                        },
+                        {
+                            "input": "16, 16",
+                            "output": "Happy birthday!"
+                        }
+                    ],
+                    "completed": false
+                },
+                {
+                    "title": "Boolean Operators - And",
+                    "description": "",
+                    "initial": "# a: bool\n# b: bool\na, b = $testcase\n\n",
+                    "expected": [
+                        {
+                            "input": "True, False",
+                            "output": "False"
+                        },
+                        {
+                            "input": "False, False",
+                            "output": "False"
+                        },
+                        {
+                            "input": "True, True",
+                            "output": "True"
+                        }
+                    ],
+                    "completed": false
+                },
+                {
+                    "title": "Boolean Operators - Or",
+                    "description": "",
+                    "initial": "# a: bool\n# b: bool\na, b = $testcase\n\n",
+                    "expected": [
+                        {
+                            "input": "True, False",
+                            "output": "True"
+                        },
+                        {
+                            "input": "False, False",
+                            "output": "False"
+                        },
+                        {
+                            "input": "True, True",
+                            "output": "True"
+                        }
+                    ],
+                    "completed": false
+                },
+                {
+                    "title": "Boolean Operators - Not",
+                    "description": "",
+                    "initial": "# a: bool\na = $testcase\n\n",
+                    "expected": [
+                        {
+                            "input": "True",
+                            "output": "False"
+                        },
+                        {
+                            "input": "False",
+                            "output": "True"
+                        },
+                        {
+                            "input": "1",
+                            "output": "False"
+                        },
+                        {
+                            "input": "0",
+                            "output": "True"
+                        }
+                    ],
+                    "completed": false
+                },
+                {
+                    "title": "Combining Boolean Operators",
+                    "description": "",
+                    "initial": "# a: bool\n# b: bool\na, b = $testcase\n\n",
+                    "expected": [
+                        {
+                            "input": "True, False",
+                            "output": "True"
+                        },
+                        {
+                            "input": "False, False",
+                            "output": "False"
+                        },
+                        {
+                            "input": "True, True",
+                            "output": "False"
+                        }
+                    ],
+                    "completed": false
+                },
+                {
+                    "title": "Skill Assessment",
+                    "description": "",
+                    "initial": "# grade: int\ngrade = $testcase\n\n",
+                    "expected": [
+                        {
+                            "input": "4",
+                            "output": "Elementary"
+                        },
+                        {
+                            "input": "7",
+                            "output": "Middle"
+                        },
+                        {
+                            "input": "11",
+                            "output": "High"
                         }
                     ],
                     "completed": false

@@ -1,0 +1,24 @@
+<p>
+    Operations also have a default priority, which is the order in which they are evaluated. These rules are generally the same as in math.
+</p>
+<code>priority | operation
+---------|----------
+1        | parentheses
+2        | exponentiation
+3        | multiplication, division, remainder
+4        | addition, subtraction
+</code>
+
+<p>
+    This means that if you have a statement like `1 + 2 * 3`, Python will evaluate the multiplication first, 
+    then the addition; because multiplication has a higher priority than addition.
+</p>
+<code><fun>print</fun>(1 - 2 * 3) <cmt># prints -5</cmt></code>
+<p>
+    But we can change the order in which Python evaluates a statement by using parentheses.
+</p>
+<code><fun>print</fun>((1 - 2) * 3) <cmt># prints -3</cmt></code>
+
+<p>
+    modify the given print statement so that it prints `20`. it currently prints `14`.
+</p>

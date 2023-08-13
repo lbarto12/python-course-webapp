@@ -23,6 +23,10 @@
 		}
 	}
 
+	function has_testcases(): boolean {
+		return typeof data.page.expected == 'object';
+	}
+
 
 
 	function description_format(desc: string): string {
@@ -73,7 +77,7 @@
 
 	}
 
-	let success: Array<number> = Array.from({ length: data.page.expected.length }, () => -1);
+	$: success = Array.from({ length: data.page.expected.length }, () => -1);
 
 	async function run() {
 		let result = await Python.submit(data.id, data.current_page,value);
@@ -192,12 +196,12 @@
 			<Button onClick={run} style="position: absolute; right: 100px;">Run</Button>
 		</div>
 		<div style="width: 100%; display: flex;">
-			{#if typeof data.page.expected == "object"}
+			{#if has_testcases()}
 				<Testcases bind:success="{success}" testcases={data.page.expected}/>
 			{/if}	
 			<Card
 				style="
-				width: {typeof data.page.expected == "object" ? '70%' : '95%'}; 
+				width: {has_testcases() ? '70%' : '95%'}; 
 				display: block; 
 				background-color: var(--a2); 
 				min-height: 100px;"><p style="white-space: pre-wrap;" bind:this={output} /></Card
