@@ -6,17 +6,19 @@ export async function load({ params }) {
     let id: string = params.id.split("_").join(" ");
     let idx: number = parseInt(params.page);
 
+    console.log(id, idx);
+
+
     let problem = await fetchAsync("POST", `/units/get`, {
         id
     });
 
+    console.log(problem);
 
     let page: any = problem.pages[idx];
     let num_pages: number = problem.pages.length;
 
     // let submissions = await fetchAsync("GET", `/submissions/${id}`);
-
-    console.log(page)
 
     return {
         id,

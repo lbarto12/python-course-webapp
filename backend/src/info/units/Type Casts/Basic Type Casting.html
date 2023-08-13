@@ -1,0 +1,41 @@
+<p>
+    `Type Casting` refers to changing an entity of one data type into another. 
+    Basic type casting can be very useful, and is sometimes required when working with
+    different data types or user input.
+</p>
+<p>
+    for example, user input is always a string, but sometimes we need to use it as a number. to do so, we can use the `int()` function.
+</p>
+<code><var>response</var> = <fun>input</fun>("what is your age?")
+<var>response</var> = <fun>int</fun>(<var>response</var>)
+</code>
+
+<p>
+    Most types can be cast into other types, irrespective of where they come from or are stored
+</p>
+<code><var>x</var> = "20.5"
+<var>y</var> = <fun>float</fun>(<var>x</var>)
+<var>z</var> = <fun>int</fun>(<var>x</var>)
+</code>
+
+<p>
+    Some casts have different behaviour depending on the type of the entity being cast. take, for example, casting a `boolean` to an `int`.
+    if the boolean is `True`, the result will be `1`, and if it is `False`, the result will be `0`.
+</p>
+<code><var>x</var> = <kwd>True</kwd>
+<var>y</var> = <fun>int</fun>(<var>x</var>)
+<fun>print</fun>(<var>y</var>) <cmt># prints 1</cmt>
+</code>
+
+<p>
+    This occurs because `True` and `False` are actually just `1` and `0` in disguise. we can even use them as numbers to prove this point
+</p>
+<code><var>x</var> = <kwd>True</kwd>
+<var>y</var> = <kwd>True</kwd>
+<var>z</var> = <var>x</var> + <var>y</var>
+<fun>print</fun>(<var>z</var>) <cmt># prints 2</cmt>
+</code>
+
+<p>
+    Given `n`, try casting it to an int, then print the result of `n` squared (remember your operators!)
+</p>

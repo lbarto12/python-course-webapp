@@ -1,0 +1,18 @@
+<p>The print function also accepts named arguments, such as `sep` and `end`</p>
+<p>For example, the following code prints the numbers 1 through 5, separated by hyphens:</p>
+<code><fun>print</fun>(1, 2, 3, 4, 5, <var>sep</var>="-")   <cmt># prints: 1-2-3-4-5</cmt></code>
+
+<p>
+    The `end` parameter controls what is printed at the end of the print statement.
+    Print statements by default end with a newline character, but you can change that by passing the `end` parameter:
+</p>
+
+<code><fun>print</fun>("Hello", end=" World")   <cmt># prints: Hello World</cmt></code>
+
+<p>both arguments are optional, and can be used together:</p>
+
+<code><fun>print</fun>(1, 2, 3, 4, 5, <var>sep</var>="-", <var>end</var>="!")   <cmt># prints: 1-2-3-4-5!</cmt></code>
+
+<p>Try printing the lower-case letters 'a', 'b', 'c' and 'd'; seperated by `->`, and ending with `!!`. The output should look like:</p>
+
+<code>a->b->c->d!!</code>

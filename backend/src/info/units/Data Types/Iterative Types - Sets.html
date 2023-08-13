@@ -1,0 +1,32 @@
+<p>
+    `Sets` are collections of `distinct` values. They are mutable, which means that once declared, they can be changed.
+</p>
+<p>
+    To declare a `set`, we use curly braces `{ }` and separate the values with commas `,`:
+</p>
+<code><var>x</var> = {1, 2, 3}</code>
+
+<p>
+    However, if you try to declare a set with no elements, you will get an `Error` when trying to perform operations on it. 
+    This is because when no elements are present, Python will interpret it as a `Dictionary` instead. We will talk about dictionaries
+    on the next slide.
+</p>
+<p>
+    To declare an empty set, we use the `set()` function:
+</p>
+<code><var>x</var> = <fun>set</fun>()</code>
+
+<p>
+    The most important distintion `sets` and other `iterative types` is that `sets` are `unordered`, and only hold `distinct values`. 
+    This means that the order of the elements in the set is not guaranteed, and that no two elements in the set can be the same.
+</p>
+<p>
+    `sets` with duplicate values will be reduced to a single value:
+</p>
+<code><var>x</var> = {1, 2, 2, 3, 3}
+<fun>print</fun>(<var>x</var>) <cmt># prints: {1, 2, 3}</cmt>
+</code>
+
+<p>
+    Given the `set` `my_set`, try printing its value. 
+</p>

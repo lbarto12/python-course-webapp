@@ -7,42 +7,215 @@
         "completed": 27
     },
     "units": {
-        "Python Built-in Functions": {
+        "The Print Function": {
             "id": 1,
             "completed": false,
             "difficulty": "Easy",
             "nums_completed": 0,
             "pages": [
                 {
-                    "description": "<p>Python has many useful built-in functions that we use to run and debug our code. </p><p>The most basic of these is the print directive, try printing \"Hello World\" by running:</p><code>print(\"Hello World\")</code><p>python also has some useful functions for capturing user data, such as input, but we can't use it here because the code is run on a server :(. However, the syntax looks like this:</p><code>response = input(\"what is your favourite color\")</code>",
+                    "title": "Print & Input",
+                    "description": "",
                     "completed": false,
                     "expected": "Hello World"
                 },
                 {
-                    "description": "<p>There are also some useful functions for numbers, such as sum, max, and min</p><p>sum only works on lists and other iterable structures, but min and max work on any number of parameters</p><p>Given the numbers stored in a and b, print the sum, min and max of the two numbers with:</p><code>print(sum([a, b]))\nprint(min(a, b))\nprint(max(a, b))</code>",
+                    "title": "More on Printing",
+                    "description": "",
+                    "initial": "",
+                    "completed": false,
+                    "expected": "!!!!!!!!"
+                },
+                {
+                    "title": "More on Printing 2",
+                    "description": "",
+                    "initial": "",
+                    "completed": false,
+                    "expected": "a->b->c->d!!"
+                }
+            ]
+        },
+        "Data Types": {
+            "id": 2,
+            "completed": false,
+            "difficulty": "Easy",
+            "nums_completed": 0,
+            "pages": [
+                {
+                    "title": "Basic Types",
+                    "description": "",
+                    "initial": "x = 10\ny = 1.234\n\n",
+                    "completed": false,
+                    "expected": "<class 'int'> <class 'float'>"
+                },
+                {
+                    "title": "Basic Types 2",
+                    "description": "",
+                    "initial": "x = 'Hello World'\ny = True\n\n",
+                    "completed": false,
+                    "expected": "<class 'str'> <class 'bool'>"
+                },
+                {
+                    "title": "Iterative Types - Lists",
+                    "description": "",
+                    "initial": "from typing import List\n\nmy_list: List[int] = [1, 2, 3, 4, 5]\n\n",
+                    "completed": false,
+                    "expected": "[1, 2, 10, 4, 5]"
+                },
+                {
+                    "title": "Iterative Types - Tuples",
+                    "description": "",
+                    "initial": "from typing import Tuple\n\nmy_tuple: Tuple[int] = (1, 2, 3)\n\n",
+                    "completed": false,
+                    "expected": "1\n2\n3"
+                },
+                {
+                    "title": "Iterative Types - Sets",
+                    "description": "",
+                    "initial": "from typing import Set\n\nmy_set: Set[int] = {1, 2, 2, 3, 3}\n\n",
+                    "completed": false,
+                    "expected": "{1, 2, 3}"
+                },
+                {
+                    "title": "Iterative Types - Dictionaries",
+                    "description": "",
+                    "initial": "from typing import Dict\n\nmy_dict: Dict[str, int] = {'a': 1, 'b': 2, 'c': 3}\n\n",
+                    "completed": false,
+                    "expected": "5"
+                },
+                {
+                    "title": "Skill Assessment",
+                    "description": "",
+                    "initial": "from typing import List, Tuple, Set, Dict",
+                    "completed": false,
+                    "expected": "5.25\nHello World\nTrue\n[1, 2, 20, 4, 5]\n1 2 3\n{1, 2, 3}\n{'a': 1, 'b': 2, 'c': 3, 'd': 4}"
+                }
+            ]
+        },
+        "Numbers & Operations": {
+            "id": 3,
+            "completed": false,
+            "difficulty": "Easy",
+            "nums_completed": 0,
+            "pages": [
+                {
+                    "title": "Numbers in Depth",
+                    "description": "",
+                    "initial": "a = 10\nb = 5",
+                    "completed": false,
+                    "expected": "15\n5\n50\n2.0"
+                },
+                {
+                    "title": "Numbers in Depth 2",
+                    "description": "",
+                    "initial": "a = 10\nb = 5",
+                    "completed": false,
+                    "expected": "0\n2\n100000"
+                },
+                {
+                    "title": "Simple Aggregates",
+                    "description": "",
                     "initial": "a = 5\nb = 10\n\n",
                     "expected": "15\n5\n10",
                     "completed": false
                 },
                 {
+                    "title": "Numerical Functions",
                     "description": "",
-                    "completed": false,
-                    "expected": ""
+                    "initial": "a = -1.25623\n\n",
+                    "expected": "1.256",
+                    "completed": false
                 },
                 {
+                    "title": "Advanced Numerical Functions",
                     "description": "",
-                    "completed": false,
-                    "expected": ""
+                    "initial": "a = 24\nb = 5\n\n",
+                    "expected": "4 4\n0b101",
+                    "completed": false
                 },
                 {
+                    "title": "Number Reassignment",
                     "description": "",
-                    "completed": false,
-                    "expected": ""
+                    "initial": "a = 2\nb = 3\n\n",
+                    "expected": "2",
+                    "completed": false
                 },
                 {
+                    "title": "Skill Assessment",
                     "description": "",
-                    "completed": false,
-                    "expected": ""
+                    "initial": "a = 25",
+                    "expected": "3858.0 0.0\n0b111100010010",
+                    "completed": false
+                }
+            ]
+        },
+        "Type Casts": {
+            "id": 4,
+            "completed": false,
+            "difficulty": "Easy",
+            "nums_completed": 0,
+            "pages": [
+                {
+                    "title": "Basic Type Casting",
+                    "description": "",
+                    "initial": "n = '25'",
+                    "expected": "625",
+                    "completed": false
+                },
+                {
+                    "title": "Why it Matters",
+                    "description": "",
+                    "initial": "n = '5'",
+                    "expected": "5\nTrue",
+                    "completed": false
+                }
+            ]
+        },
+        "Test Cases": {
+            "id": 5,
+            "completed": false,
+            "difficulty": "Easy",
+            "nums_completed": 0,
+            "pages": [
+                {
+                    "title": "Introducing Test-Cases",
+                    "description": "",
+                    "initial": "# a: int\n# b: int\na, b = $testcase\n\n",
+                    "expected": [
+                        {
+                            "input": "1, 2",
+                            "output": "3"
+                        },
+                        {
+                            "input": "5, 10",
+                            "output": "15"
+                        },
+                        {
+                            "input": "100, 200",
+                            "output": "300"
+                        }
+                    ],
+                    "completed": false
+                },
+                {
+                    "title": "Skill Assessment",
+                    "description": "",
+                    "initial": "# a: int\n# b: int\na, b = $testcase\n\n",
+                    "expected": [
+                        {
+                            "input": "1, 2",
+                            "output": "-1"
+                        },
+                        {
+                            "input": "5, 10",
+                            "output": "-5"
+                        },
+                        {
+                            "input": "100, 200",
+                            "output": "-100"
+                        }
+                    ],
+                    "completed": false
                 }
             ]
         }

@@ -1,0 +1,32 @@
+<p>
+    lists are a collection of items, each item has a unique index starting from 0 to the `length` of the list - 1.
+</p>
+<p>
+    lists are defined using square brackets `[ ]` and each item is separated by a comma `,`:
+</p>
+<code><var>my_list</var> = [1, 2, 3, 4, 5]</code>
+<p>
+    you can access an item in the list by referencing its index inside square brackets `[ ]`:
+</p>
+<code><fun>print</fun>(<var>my_list</var>[0])   <cmt># prints: 1</cmt>
+<fun>print</fun>(<var>my_list</var>[2])   <cmt># prints: 3</cmt>
+</code>
+
+<p>
+    Lists are also `mutable`, meaning that you can change the value of an item in the list by referencing its index:
+</p>
+<code><var>my_list</var>[0] = 10
+<fun>print</fun>(<var>my_list</var>)   <cmt># prints: [10, 2, 3, 4, 5]</cmt>
+</code>
+
+<p>
+    Typing for lists is most adequately defined in the typing module as `List`, which takes a `type` argument for the type of the items in the list:
+</p>
+<code><fun>from</fun> <var>typing</var> <fun>import</fun> <var>List</var>
+
+<var>my_list</var>: <var>List</var>[<var>int</var>] = [1, 2, 3, 4, 5]
+</code>
+
+<p>
+    Given the list `my_list`, try changing the value of the item at `index 2` to the value `10`, then `print the list`.
+</p>

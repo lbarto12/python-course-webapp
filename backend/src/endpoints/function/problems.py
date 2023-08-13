@@ -1,4 +1,5 @@
 from flask import jsonify, request, make_response
+import copy
 from ...dbutils import Database
 
 
@@ -13,7 +14,13 @@ def problems(app):
         if not request.json.get("id"):
             return make_response(jsonify({"error": "No ID provided"}), 400)
         problems = Database.get("units")
-        return jsonify(problems[request.json["id"]])
+        problem = problems[request.json["id"]]
+        result = copy.deepcopy(problem)
+        for i, page in enumerate(problem["pages"]):
+            path = f"src/info/units/{request.json['id']}/{problem['pages'][i]['title']}.html"
+            with open(path, "r") as f:
+                result["pages"][i]["description"] = f.read()
+        return jsonify(result)
     
     @app.route('/units/page/complete', methods=['POST'])
     def units_page_complete():

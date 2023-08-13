@@ -31,7 +31,7 @@
         }}" 
         style="height: 30px; cursor: pointer;">
         <div style="width: 50%; display: flex; justify-content: left;">
-            {#if data.completed}
+            {#if data.completed == data.total}
                 <iconify-icon 
                     icon="fluent-mdl2:completed" 
                     style="
@@ -55,7 +55,7 @@
             <h4>{title}</h4>
         </div>
         <div style="width: 50%; display: flex; justify-content: right; gap: 20px">
-            <h4>{data.num_completed} / {data.pages.length}</h4>
+            <h4>{data.completed} / {data.total}</h4>
             <h4 style="color: {getColor()};">{data.difficulty}</h4>
         </div>
     </Card>

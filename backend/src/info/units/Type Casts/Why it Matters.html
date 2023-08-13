@@ -1,0 +1,32 @@
+<p>
+    `Type Casting` is mostly important when combining and comparing different data types. 
+</p>
+<p>
+    For example, if you try to add a string and a number, you will get an error.
+</p>
+<code><var>x</var> = "20"
+<var>y</var> = 5
+<var>z</var> = <var>x</var> + <var>y</var> <cmt># error</cmt>
+</code>
+
+<p>
+    Even more confusingly, if you try to `multiply` a `string` by a `number`, 
+    you will actually get a valid but completely different interpretation of the expression:
+</p>
+<code><var>x</var> = "20"
+<var>y</var> = 5
+<fun>print</fun>(<var>x</var> * <var>y</var>) <cmt># prints: 2020202020</cmt>
+<fun>print</fun>(<fun>int</fun>(<var>x</var>) * <var>y</var>) <cmt># prints: 100</cmt>
+</code>
+
+<p>
+    What is most important to remember, is that if you are unsure of the `type` of a variable, 
+    you probably haven't `typed` your variables well enough. Remember too, if you need to be sure,
+    you can always use the `type()` function to find out.
+</p>
+<p>
+    try casting `n` to an `int`, then print the result of `n`.
+    Then cast `n` to a `bool` and print the result of `n`.
+    Both answers should appear on seperate lines, and use the initial
+    value of `n`
+</p>

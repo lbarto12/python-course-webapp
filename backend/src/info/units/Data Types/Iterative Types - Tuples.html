@@ -1,0 +1,37 @@
+<p>
+    `Tuples` are a collection of values of different types. They are immutable, which means that once declared, they cannot be changed.
+</p>
+<p>
+    To declare a `tuple`, we use brackets `( )` and separate the values with commas `,`: 
+</p>
+<code><var>x</var> = (1, 2)</code>
+
+<p>
+    A lesser known fact is that you can declare a `tuple` without the brackets `( )` and it will still work:
+</p>
+<code><var>x</var> = 1, 2</code>
+
+<p>
+    this is called `tuple packing`. Similarly you can unpack a `tuple` into variables:
+</p>
+<code><var>t</var> = (1, 2) 
+<var>x</var>, <var>y</var> = t 
+<fun>print</fun>(x) <cmt># prints: 1</cmt>
+<fun>print</fun>(y) <cmt># prints: 2</cmt>
+</code>
+
+<p>
+    You can even unpack a `tuple` from the values inline:
+</p>
+<code><var>x</var>, <var>y</var> = 1, 2
+<fun>print</fun>(x) <cmt># prints: 1</cmt>
+<fun>print</fun>(y) <cmt># prints: 2</cmt>
+</code>
+
+<p>
+    Though it is not often considered in terms of `Tuples`, this method is often used to assign multuple variables at once.
+</p>
+
+<p>
+    Try unpacking the tuple `t` into 3 variables, and print them out on separate lines
+</p>
