@@ -1,17 +1,16 @@
 import { fetchAsync } from "$lib/services/fetch-service";
+import { Profile } from "$lib/services/profile-service";
+import { Stats } from "$lib/services/stats-service";
 
 /** @type {import('./$types').PageLoad} */
 export async function load() {
 
-    let completion: any = await fetchAsync("GET", "/user/stats/completion");
-    let next: any = await fetchAsync("GET", "/user/stats/nextlesson");
-    let problems: any = await fetchAsync("GET", "/units/list");
-
-    console.log(completion);
-    console.log(next);
+    let completion: any = await Stats.getCompletion();
+    let next: any = await Stats.getNextLesson();
+    let problems: any = Stats.getUnits();
 
 
-    let name: string = await fetchAsync("GET", "/user/name");
+    let name: string = await Profile.getUserName();
 
 
     return {

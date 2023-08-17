@@ -9,4 +9,19 @@ export class Stats {
         });
         return res;
     };
+    
+    public static async getCompletion(): Promise<any> {
+        let res: any = await fetchAsync("GET", "/user/stats/completion");
+        return res;
+    };
+
+    public static async getNextLesson(): Promise<any> {
+        let res: any = await fetchAsync("GET", "/user/stats/nextlesson");
+        return res;
+    }
+
+    public static async getUnits(): Promise<any> {
+        let res: any = await fetchAsync("GET", "/units/list");
+        return res;
+    }
 }

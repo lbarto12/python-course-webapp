@@ -1,0 +1,30 @@
+.quickview_container {
+    display: flex;
+}
+
+.progress_card {
+    justify-content: left; 
+    gap: 20px; 
+    width: 50vw;
+}
+
+.next_lesson_card {
+    justify-content: 
+    left; gap: 20px; 
+    width: 50vw;
+}
+
+.next_lesson_card Button {
+    display: flex; 
+    justify-content: left; 
+    align-items: center;
+    width: 100%;
+}
+
+.problems_list {
+
+}
+
+.problems_list .unit_title {
+    padding-left: 20px;
+}

@@ -10,6 +10,7 @@
 	import Button from "$lib/component/Button/Button.svelte";
 	import Input from "$lib/component/Input/Input.svelte";
 	import { goto } from "$app/navigation";
+	import { Profile } from "$lib/services/profile-service";
 
     export let data: any;
 
@@ -23,11 +24,7 @@
     });
 
     async function onStart() {
-        let res: string = await fetchAsync("POST", "/user/name", {
-            name
-        });
-
-        if (res) {
+        if (await Profile.setUserName(name)) {
             await goto("/dashboard");
         }
     }
@@ -35,9 +32,9 @@
 </script>
 
 <!-- Component -->
-<div class="page">
+<div class="{styles.page}">
     <Card>
-        <form on:submit|preventDefault={onStart} style="height: 80vh; width: 80vw;">
+        <form on:submit|preventDefault={onStart} class="{styles.intro_form}">
             <img src="/images/general/python.png" alt="">
             <h1>Hey There!</h1>
             <p>What's your name?</p>
@@ -48,26 +45,3 @@
         </form>
     </Card>
 </div>
-
-
-<!-- Style -->
-<style>
-    .page {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    img {
-        width: 100px;
-        height: 100px;
-    }
-</style>
