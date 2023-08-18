@@ -24,7 +24,7 @@
     });
 
     async function onStart() {
-        if (await Profile.setUserName(name)) {
+        if (await Profile.setUserName(data.fetch, name)) {
             await goto("/dashboard");
         }
     }

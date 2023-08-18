@@ -2,26 +2,26 @@ import { fetchAsync } from "./fetch-service";
 
 
 export class Stats {
-    public static async setComplete(unit: string, page: number): Promise<any> {
-        let res = await fetchAsync("POST", "/units/page/complete", {
+    public static async setComplete(pagefetch: any, unit: string, page: number): Promise<any> {
+        let res = await fetchAsync(pagefetch, "POST", "/units/page/complete", {
             unit,
             page
         });
         return res;
     };
     
-    public static async getCompletion(): Promise<any> {
-        let res: any = await fetchAsync("GET", "/user/stats/completion");
+    public static async getCompletion(pagefetch: any, ): Promise<any> {
+        let res: any = await fetchAsync(pagefetch, "GET", "/user/stats/completion");
         return res;
     };
 
-    public static async getNextLesson(): Promise<any> {
-        let res: any = await fetchAsync("GET", "/user/stats/nextlesson");
+    public static async getNextLesson(pagefetch: any, ): Promise<any> {
+        let res: any = await fetchAsync(pagefetch, "GET", "/user/stats/nextlesson");
         return res;
     }
 
-    public static async getUnits(): Promise<any> {
-        let res: any = await fetchAsync("GET", "/units/list");
+    public static async getUnits(pagefetch: any, ): Promise<any> {
+        let res: any = await fetchAsync(pagefetch, "GET", "/units/list");
         return res;
     }
 }

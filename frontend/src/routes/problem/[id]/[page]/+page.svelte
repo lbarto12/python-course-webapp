@@ -49,7 +49,7 @@
 
 
 	async function run() {
-		let result = await Python.submit(data.id, data.current_page,value);
+		let result = await Python.submit(data.fetch, data.id, data.current_page,value);
 		let response: string = '';
 		if (result.results) {
 			for (let i = 0; i < result.results.length; i++) {
@@ -67,7 +67,7 @@
 	}
 
 	async function submit() {
-		let result = await Python.submit(data.id, data.current_page, value);
+		let result = await Python.submit(data.fetch, data.id, data.current_page, value);
 		let response: string = '';
 
 		if (result.results) {
@@ -76,7 +76,7 @@
 
 		if (result.success) {
 			response += result.out + '\nCorrect!';
-			Stats.setComplete(data.id, data.current_page);
+			Stats.setComplete(data.fetch, data.id, data.current_page);
             data.page.completed = true;
 		} else {
 			response += 'Incorrect!\n';
